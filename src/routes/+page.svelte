@@ -6,12 +6,14 @@
     <Button 
     text="Button"
     type="solid" 
-    size="small" 
+    size="large" 
     style="primary"
-    iconType="none" 
+    iconType="trailing" 
     state="default" 
-    leadingIcon="none" 
-    trailingIcon ="none" />
+    leadingIcon="plus" 
+    trailingIcon ="menu" />
+
+
  
 </div>
 
@@ -19,25 +21,16 @@
 <style>
 
     .showcase {
+        width: auto;
         padding: 60px;
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
 
-    h2 {
-        color: white;
-
-    }
+  
 
  
-    .row {
-
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
-    
-    }
+ 
 </style>
 

@@ -139,10 +139,12 @@ src={iconType == "trailing" || iconType == "leadingTrailing" ? `/${trailingIcon}
         --textHightContrast: #FFFFFF;
         --textSoftContrast: #FFFFFFB2;
         --textLowContrast: #94979A;
+        width: max-content;
+        height: max-content;
 
         
          
-        
+       
         font-size: 14px;
         border-radius: 8px;
         color: white;
@@ -272,21 +274,23 @@ src={iconType == "trailing" || iconType == "leadingTrailing" ? `/${trailingIcon}
 
    .solid.disabled {
     background-color: #30343B;
-    color: #94979A;
+    color:  var(--textLowContrast);
    }
 
    .soft.disabled {
     background-color: #30343B80;
+    color:  var(--textLowContrast);
    }
 
    .outline.disabled {
     border: 1px solid #38393B;
+    color:  var(--textLowContrast);
 
    }
 
    .ghost.disabled {
     border: none;
-    color: #94979A;
+    color:  var(--textLowContrast);
    }
 
    .solid.disabled img.show {
@@ -325,8 +329,8 @@ src={iconType == "trailing" || iconType == "leadingTrailing" ? `/${trailingIcon}
    .none {
         padding-top: var(--baseSize);
         padding-bottom: var(--baseSize);
-        padding-right:  calc(var(--baseSize) + (var(--baseSize) + 4px));
-        padding-left:  calc(var(--baseSize) + (var(--baseSize) + 4px));
+        padding-right:  calc(var(--baseSize) + var(--baseSize));
+        padding-left:  calc(var(--baseSize) + var(--baseSize));
     }
 
 
@@ -335,14 +339,14 @@ src={iconType == "trailing" || iconType == "leadingTrailing" ? `/${trailingIcon}
         padding-top: var(--baseSize);
         padding-bottom: var(--baseSize);
         padding-left: var(--baseSize);
-        padding-right: calc(var(--baseSize) + (var(--baseSize) + 4px));
+        padding-right: calc(var(--baseSize) + var(--baseSize) - 4px);
     }
 
     .trailing {
         padding-top: var(--baseSize);
         padding-bottom: var(--baseSize);
         padding-right: var(--baseSize);
-        padding-left:  calc(var(--baseSize) + (var(--baseSize) + 4px));
+        padding-left:  calc(var(--baseSize) + (var(--baseSize) - 4px));
     }
 
     .leadingTrailing {
